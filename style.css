@@ -1,0 +1,22 @@
+body  {
+  background-color: #413D3A;
+  color: white;
+}
+main {
+  text-align: center;
+}
+
+main img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  transition: .5s;
+}
+
+main img:hover {
+  box-shadow: 1px 1px 50px black;
+}
+
+footer {
+  text-align: center;
+}
