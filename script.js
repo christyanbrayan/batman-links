@@ -6,7 +6,7 @@ function change() {
 
   if (document.body.id == 'bat-mode') {
     document.body.id = 'bruce-mode'
-    document.querySelector("link[rel~='icon']").href = './img/tie.png';
+    document.querySelector("link[rel~='icon']").href = './img/tie-icon.png';
     document.title = 'Bruce Links'
     icon.src = './img/bruce.jpeg'
     document.getElementById('bruce-links').style.display = 'block'
@@ -15,7 +15,7 @@ function change() {
 
   } else if (document.body.id == 'bruce-mode') {
     document.body.id = 'bat-mode'
-    document.querySelector("link[rel~='icon']").href = './img/icon.png';
+    document.querySelector("link[rel~='icon']").href = './img/bat-icon.png';
     document.title = 'Batman Links'
     icon.src = './img/batman.jpg'
     document.getElementById('bat-links').style.display = 'block'
