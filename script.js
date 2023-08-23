@@ -1,26 +1,34 @@
 console.log('“They think I am hiding in the shadows, but I am the shadows.”') // something in the way, hmmmm
 
-function change() {
+function changeMode() {
 
-  icon = document.getElementById('icon')
+  favicon = document.querySelector("link[rel~='icon']")
+  site = document
+  body = document.body
+  pageTitle = document.getElementById('title')
+  profileImage = document.getElementById('profile')
+  batLinks = document.getElementById('bat-links')
+  bruceLinks = document.getElementById('bruce-links')
 
+  // change bat to bruce
   if (document.body.id == 'bat-mode') {
-    document.body.id = 'bruce-mode'
-    document.querySelector("link[rel~='icon']").href = './img/tie-icon.png';
-    document.title = 'Bruce Links'
-    icon.src = './img/bruce.jpeg'
-    document.getElementById('bruce-links').style.display = 'block'
-    document.getElementById('bat-links').style.display = 'none'
-    document.getElementById('title').innerText = 'Bruce Links 👔'
+    body.id = 'bruce-mode'
+    favicon.href = './img/tie-icon.png';
+    site.title = 'Bruce Links'
+    profileImage.src = './img/bruce.jpeg'
+    pageTitle.innerText = 'Bruce Links 👔'
+    bruceLinks.style.display = 'block'
+    batLinks.style.display = 'none'
 
+    // change bruce to bat
   } else if (document.body.id == 'bruce-mode') {
-    document.body.id = 'bat-mode'
-    document.querySelector("link[rel~='icon']").href = './img/bat-icon.png';
-    document.title = 'Batman Links'
-    icon.src = './img/batman.jpg'
-    document.getElementById('bat-links').style.display = 'block'
-    document.getElementById('bruce-links').style.display = 'none'
-    document.getElementById('title').innerText = 'Batman Links 🦇'
+    body.id = 'bat-mode'
+    favicon.href = './img/bat-icon.png';
+    site.title = 'Batman Links'
+    profileImage.src = './img/batman.jpg'
+    pageTitle.innerText = 'Batman Links 🦇'
+    batLinks.style.display = 'block'
+    bruceLinks.style.display = 'none'
   }
 
 }
