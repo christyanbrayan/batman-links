@@ -3,22 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./img/bat-icon.png" type="image/x-icon">
   <title>Batman Links</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="bat-mode">
 
   <main>
-    <h1 id="title">Batman links 🦇</h1>
-    <img id="icon" src="./img/batman.jpg">
+    <h1 id="title">
+      Batman Links
+    </h1>
+
+    <img id="profile" src="./img/batman.jpg" onclick="changeMode()">
+    
     <br>
-    <button onclick="change()">change</button>
+    
+    <button onclick="changeMode()"></button>
+    
+    <ul id="bat-links">
+      <li>Batcave</li>
+      <li>Justice League</li>
+      <li>Gotham Police Department</li>
+    </ul>
+    
+    <ul id="bruce-links" style="display: none">
+      <li>Wayne Enterprises</li>
+      <li>Wayne Foundation</li>
+    </ul>
   </main>
 
   <footer>
     <p>
-      Developed with vengeance in Gotham City by <a href="https://github.com/christyanbrayan" target="_blank">christyanbrayan</a>
+      Developed with vengeance in Gotham City by
+      <a href="https://github.com/christyanbrayan" target="_blank">christyanbrayan</a>
     </p>
     <p>
       No rights reserved.
