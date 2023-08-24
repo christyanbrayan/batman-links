@@ -16,7 +16,7 @@ function changeMode() {
     favicon.href = './img/tie-icon.png';
     site.title = 'Bruce Links'
     profileImage.src = './img/bruce.jpeg'
-    pageTitle.innerText = 'Bruce Links 👔'
+    pageTitle.innerHTML = 'Bruce Links'
     bruceLinks.style.display = 'block'
     batLinks.style.display = 'none'
 
@@ -26,7 +26,7 @@ function changeMode() {
     favicon.href = './img/bat-icon.png';
     site.title = 'Batman Links'
     profileImage.src = './img/batman.jpg'
-    pageTitle.innerText = 'Batman Links 🦇'
+    pageTitle.innerHTML = 'Batman Links'
     batLinks.style.display = 'block'
     bruceLinks.style.display = 'none'
   }
