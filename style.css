@@ -8,6 +8,11 @@
   font-family: 'Didact Gothic', sans-serif;
 }
 
+/*
+  #3A96DD
+  #AAAAAA
+*/
+
 #bat-mode {
   --bg-color: #232F2B; /* #262C3A */ /* #262C3A */
   --hover-color: #FE8B20;
@@ -31,9 +36,20 @@ body  {
   color: var(--text-color);
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 main {
-  margin: 50px auto;
-  text-align: center;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main h1 {
@@ -56,15 +72,10 @@ main img:hover {
   box-shadow: 1px 1px 50px var(--hover-color);
 }
 
-/* #3A96DD
-#AAAAAA
-*/
 
 main button {
-  /* background: none; */
   border: none;
   border-radius: 50%;
-  /* padding: 10px; */
   width: 50px;
   height: 50px;
   text-align: center;
@@ -87,6 +98,18 @@ main button:hover::before {
 main ul {
   margin-top: 20px;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+main ul li {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 footer {
