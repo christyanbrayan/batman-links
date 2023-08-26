@@ -17,7 +17,7 @@ function changeMode() {
     site.title = 'Bruce Links'
     profileImage.src = './img/bruce.jpeg'
     pageTitle.innerHTML = 'Bruce Links'
-    bruceLinks.style.display = 'block'
+    bruceLinks.style.display = 'flex'
     batLinks.style.display = 'none'
 
     // change bruce to bat
@@ -27,7 +27,7 @@ function changeMode() {
     site.title = 'Batman Links'
     profileImage.src = './img/batman.jpg'
     pageTitle.innerHTML = 'Batman Links'
-    batLinks.style.display = 'block'
+    batLinks.style.display = 'flex'
     bruceLinks.style.display = 'none'
   }
 
